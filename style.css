@@ -1,0 +1,345 @@
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+ /* background-color: #f1f1f1;*/
+  padding: 20px 10px;
+}
+.ctn {
+    width: 100%;
+    height: 600px;
+    background-image:url("./Zimbabwe-1024x683.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 20px;
+ /* font-weight: bold;*/
+}
+
+.header a:hover {
+  /* background-color: #ddd; */
+  color: rgb(173, 155, 155);
+}
+
+.header a.active {
+  color: #D3B10F;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+.main {
+    color: rgb(255, 255, 255);
+    font-family: 'Crimson Text';
+    /* width: 814px;
+    height: 129px;
+    left: 314px;
+    top: 236px; */
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 30px;
+    line-height: 20px;
+    text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 31.25rem;
+    margin: 1rem auto;
+  }
+  
+  .searchBar {
+    width: 100%;
+    display: flex;
+    margin-top: 4rem;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #searchQueryInput {
+    width: 100%;
+    height: 2.8rem;
+    background: #D3B10F;
+    ;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0 3.5rem 0 1.5rem;
+    font-size: 1rem;
+  }
+  
+  #searchQuerySubmit {
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-left: -3.5rem;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  
+  #searchQuerySubmit:hover {
+    cursor: pointer;
+  }
+
+  footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #112734;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #D3B10F;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #D3B10F;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #112734;
+    width: 100vw;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+body {
+    background-color: #112734;;
+  }
+
+  /* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  .sendMsgBtn {
+    background-color: #D3B10F;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .sendMsgBtn:hover {
+    background-color: #D3B10F;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+   /*Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other*/
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  .contact-image {
+      border-radius: 15px;
+  }
+  img {
+    border-radius: 0%;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    border-radius: 5px;
+    margin-right: auto;
+    width: 30%;
+  }
+.question{
+     display: inline-flex;
+}
+    input[type=quiz] {
+        background-color: #112734;
+        color: white;
+        padding: 0.2rem 1.5rem;
+        width: 10rem;
+        height: 2rem;
+        border-radius: 0%;
+        cursor: pointer;
+      }
+      
+      input[type=quiz]:hover {
+        background-color: #D3B10F;
+      }
+  
+/* Style the option menu */
+option {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 3;
+    padding: 20px;
+  }
+/* Style the list inside the menu */
+option ul {
+    list-style-type:none;
+    padding: 0;
+}
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
+
+.checkAnswerBtn {
+    padding: 12px;
+    background-color: #112734;
+    border: none;
+    color: white;
+    display: block;
+    margin-top: 8px;
+}
+
+.checkAnswerBtn:hover {
+    background-color: #ba9c08;
+}
+
+.qn-row {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+
+.qn-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.qn-row div {
+    display: inline;
+    float: left;
+}
+
+.qn-img {
+    width: 20%;
+}
+
+.qn-content {
+    width: 80%;
+    padding: 15px;
+}
+
+.error {
+    color: red;
+    display: block;
+}
+
+.center {
+    margin-bottom: 40px;
+}
